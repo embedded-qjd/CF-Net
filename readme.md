@@ -65,11 +65,11 @@ python generate_hog.py --data_root /path/to/dataset --checkpoint ./checkpoints/b
 
 3. Classification Fine-tuning (Stage 2)
 
-Fine-tune the model for the final classification task. This script automatically handles class imbalance (upsampling minority classes to ~800 samples).
-
+Fine-tune the model for the final classification task. 
 python train_classifier.py --data_root /path/to/dataset --hog_path ./hog_features.pth --pretrained_checkpoint ./checkpoints/best_model.pth
 
 
 ⚖️ License
+
 
 This project is released under the MIT License.
