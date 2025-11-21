@@ -29,9 +29,9 @@ Repository: https://github.com/embedded-qjd/HAR-Dataset-Project
 ⚙️ Environment
 
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 
 🚀 Usage
 
@@ -75,5 +75,6 @@ python train_classifier.py --data_root /path/to/dataset --hog_path ./hog_feature
 
 
 This project is released under the MIT License.
+
 
 
