@@ -53,25 +53,27 @@ Organize your dataset as follows:
 1. Pre-training (Stage 1)
 
 Train the reconstruction network to teach the encoder robust feature extraction.
-
+```bash
 python pretrain.py --data_root /path/to/dataset --save_dir ./checkpoints
-
+```
 
 2. Generate HOG Features
 
 Extract HOG features from the reconstructed images (output of Stage 1) to ensure feature quality.
-
+```bash
 python generate_hog.py --data_root /path/to/dataset --checkpoint ./checkpoints/best_model.pth --output_path ./hog_features.pth
-
+```
 
 3. Classification Fine-tuning (Stage 2)
 
 Fine-tune the model for the final classification task. 
+```bash
 python train_classifier.py --data_root /path/to/dataset --hog_path ./hog_features.pth --pretrained_checkpoint ./checkpoints/best_model.pth
-
+```
 
 ⚖️ License
 
 
 This project is released under the MIT License.
+
 
