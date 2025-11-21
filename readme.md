@@ -39,6 +39,7 @@ Data Structure
 
 Organize your dataset as follows:
 
+```text
 /path/to/dataset/
     ├── Class1_BulkCarrier/
     │   ├── 1bit/
@@ -47,7 +48,7 @@ Organize your dataset as follows:
     │   ├── 1bit/
     │   └── 16bit/
     ...
-
+ ```
 
 1. Pre-training (Stage 1)
 
@@ -73,3 +74,4 @@ python train_classifier.py --data_root /path/to/dataset --hog_path ./hog_feature
 
 
 This project is released under the MIT License.
+
